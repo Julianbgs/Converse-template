@@ -1,16 +1,71 @@
 header.header
     .container
+        .header__box
+            a(href="#").header__logo
+                img(src="img/logo.png")
 
-        a(href="/").header__logo
+            nav.header__navigation
+                ul.header__menu
+                    li
+                        a(href="#")
+                            | Доставка и оплата
 
-        nav.header__navigation
+                    li
+                        a(href="#")
+                            | Обмен и возврат
 
-            a#mobile-menu.header__trigger
-                span
-                span
-                span
+                    li
+                        a(href="#")
+                            | Блог
 
-            //    вызов миксина в переменную 'list' с указаним элементов массива(названий страниц)
-            - var list = ['главнаЯ', 'КЕЙСЫ', 'СИСТЕМЫ', 'УСЛУГИ', 'ТЕМЫ', 'МЫ', 'ПАРТНЕРЫ', 'КОНТАКТЫ'];
-            - var link = ['/', '#', '#', '#', '#', '#', '#', '#'];
-                +top-menu(list, link)
+                    li
+                        a(href="#")
+                            | Контакты
+
+            .header__phone
+                a(href="#").header__num
+                 | 8(495)120-50-32
+
+.header__low
+    .container
+        .header__low-box
+            ul.header__low-menu
+                li
+                    a(href="#")
+                        | СКИДКИ ДО 60%
+
+                li
+                    a(href="#")
+                        | МУЖЧИНАМ
+
+                li
+                    a(href="#")
+                        | ЖЕНЩИНАМ
+
+                li
+                    a(href="#")
+                        | ДЕТЯМ
+
+                li
+                    a(href="#")
+                        | НОВИНКИ
+
+            .header__low-wrap
+                a(href="#").header__low-search
+                    img(src="img/search.png")
+
+                .header__low-liked-wrap
+                    span.header__low-heart
+
+                    p.header__low-liked
+                        | Избранное: 1 товар
+
+
+                .header__low-bucket-wrap
+                    span.header__low-bucket-img
+
+                    p.header__low-bucket
+                        | корзина: 0 товаров
+
+
+

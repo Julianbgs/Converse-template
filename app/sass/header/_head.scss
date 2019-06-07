@@ -1,0 +1,193 @@
+.header {
+  display: flex;
+  width: 100%;
+
+   &__box {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     margin-top: 40px;
+     margin-bottom: 40px;
+   }
+
+  &__logo {
+    width: 200px;
+    height: 23px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__navigation {
+    position: relative;
+  }
+
+  &__menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+      li {
+        margin-right: 50px;
+
+          a {
+            color: #1d1d1d;
+            font-family: $MullerLight;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+      }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__phone {
+    position: relative;
+  }
+
+  &__num {
+    color: #1d1d1d;
+    font-family: $MullerMedium;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+     &::before {
+       position: absolute;
+       content: "";
+       display: block;
+       width: 12px;
+       height: 12px;
+       top: 3px;
+       left: -20px;
+       background-image: url("../img/phone.png");
+     }
+  }
+
+  &__low {
+    display: flex;
+    width: 100%;
+    background-color: #1d1d1d;
+
+      &-box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+    &-menu {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding-top: 30px;
+
+        li {
+          margin-right: 45px;
+
+            a {
+              color: white;
+              font-family: $Lisa;
+              font-size: 16px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+        }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-wrap {
+      display: flex;
+      width: 35%;
+      justify-content: space-between;
+    }
+
+    &-search {
+      width: 16px;
+      height: 50px;
+      overflow: hidden;
+      padding-top: 30px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+    }
+
+    &-liked-wrap {
+      display: flex;
+      width: 42%;
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:hover {
+        background-color: rgba(39,39,39, 0.9);
+      }
+    }
+
+    &-heart {
+      position: relative;
+      display: block;
+      width: 16px;
+      height: 16px;
+      top: 3px;
+      background-image: url("../img/like.png");
+    }
+
+    &-liked {
+      position: relative;
+      color: white;
+      font-family: $Lisa;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+    }
+
+    &-bucket-wrap {
+      display: flex;
+      width: 42%;
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      &:hover {
+        background-color: rgba(39,39,39, 0.9);
+      }
+    }
+
+    &-bucket-img {
+      position: relative;
+      display: block;
+      width: 15px;
+      height: 18px;
+      top: 1px;
+      background-image: url("../img/bucket.png");
+    }
+
+    &-bucket {
+      position: relative;
+      color: white;
+      font-family: $Lisa;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}

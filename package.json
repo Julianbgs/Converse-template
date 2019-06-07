@@ -4,6 +4,7 @@
   "description": "Набор включенных технологий: Jade, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
   "main": "gulpfile.js",
   "dependencies": {
+    "natives": "^1.1.6",
     "pngquant-bin": "^3.1.1"
   },
   "devDependencies": {

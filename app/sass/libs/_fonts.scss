@@ -3,3 +3,34 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 //@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 //@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+@font-face {
+  font-family: 'MullerLight';
+  src: url('../fonts/Muller/FontfabricMullerLight.eot') format('embedded-opentype'),
+  url('../fonts/Muller/FontfabricMullerLight.woff2') format('woff2'),
+  url('../fonts/Muller/FontfabricMullerLight.woff') format('woff'),
+  url('../fonts/Muller/FontfabricMullerLight.ttf') format('truetype'),
+  url('../fonts/Muller/FontfabricMullerLight.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url('../fonts/Muller/FontfabricMullerMedium.eot') format('embedded-opentype'),
+  url('../fonts/Muller/FontfabricMullerMedium.woff2') format('woff2'),
+  url('../fonts/Muller/FontfabricMullerMedium.woff') format('woff'),
+  url('../fonts/Muller/FontfabricMullerMedium.ttf') format('truetype'),
+  url('../fonts/Muller/FontfabricMullerMedium.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Lisa';
+  src: url('../fonts/Lisa/Lisa.eot') format('embedded-opentype'),
+  url('../fonts/Lisa/Lisa.woff2') format('woff2'),
+  url('../fonts/Lisa/Lisa.woff') format('woff'),
+  url('../fonts/Lisa/Lisa.ttf') format('truetype'),
+  url('../fonts/Lisa/Lisa.svg') format('svg');
+}
+
+$MullerLight:'MullerLight';
+$MullerMedium:'MullerMedium';
+$Lisa:'Lisa';

@@ -1,0 +1,330 @@
+@font-face {
+  font-family: 'MullerLight';
+  src: url("../fonts/Muller/FontfabricMullerLight.eot") format("embedded-opentype"), url("../fonts/Muller/FontfabricMullerLight.woff2") format("woff2"), url("../fonts/Muller/FontfabricMullerLight.woff") format("woff"), url("../fonts/Muller/FontfabricMullerLight.ttf") format("truetype"), url("../fonts/Muller/FontfabricMullerLight.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'MullerMedium';
+  src: url("../fonts/Muller/FontfabricMullerMedium.eot") format("embedded-opentype"), url("../fonts/Muller/FontfabricMullerMedium.woff2") format("woff2"), url("../fonts/Muller/FontfabricMullerMedium.woff") format("woff"), url("../fonts/Muller/FontfabricMullerMedium.ttf") format("truetype"), url("../fonts/Muller/FontfabricMullerMedium.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'Lisa';
+  src: url("../fonts/Lisa/Lisa.eot") format("embedded-opentype"), url("../fonts/Lisa/Lisa.woff2") format("woff2"), url("../fonts/Lisa/Lisa.woff") format("woff"), url("../fonts/Lisa/Lisa.ttf") format("truetype"), url("../fonts/Lisa/Lisa.svg") format("svg");
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  text-align: left;
+  vertical-align: baseline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
+textarea:hover,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
+.container {
+  *zoom: 1;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 766px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header__logo {
+  width: 200px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.header__navigation {
+  position: relative;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__menu li {
+  margin-right: 50px;
+}
+
+.header__menu li a {
+  color: #1d1d1d;
+  font-family: "MullerLight";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__menu li:last-child {
+  margin-right: 0;
+}
+
+.header__phone {
+  position: relative;
+}
+
+.header__num {
+  color: #1d1d1d;
+  font-family: "MullerMedium";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__num:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  left: -20px;
+  background-image: url("../img/phone.png");
+}
+
+.header__low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #1d1d1d;
+}
+
+.header__low-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__low-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.header__low-menu li {
+  margin-right: 45px;
+}
+
+.header__low-menu li a {
+  color: white;
+  font-family: "Lisa";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__low-menu li:last-child {
+  margin-right: 0;
+}
+
+.header__low-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__low-search {
+  width: 16px;
+  height: 50px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.header__low-search img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.header__low-liked-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 42%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header__low-liked-wrap:hover {
+  background-color: rgba(39, 39, 39, 0.9);
+}
+
+.header__low-heart {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  background-image: url("../img/like.png");
+}
+
+.header__low-liked {
+  position: relative;
+  color: white;
+  font-family: "Lisa";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__low-bucket-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 42%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header__low-bucket-wrap:hover {
+  background-color: rgba(39, 39, 39, 0.9);
+}
+
+.header__low-bucket-img {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 18px;
+  top: 1px;
+  background-image: url("../img/bucket.png");
+}
+
+.header__low-bucket {
+  position: relative;
+  color: white;
+  font-family: "Lisa";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */
