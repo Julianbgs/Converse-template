@@ -289,6 +289,7 @@ textarea:active {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .header__low-bucket-wrap {
@@ -325,6 +326,199 @@ textarea:active {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #f3f3f3;
+  overflow: hidden;
+}
+
+.banner__title {
+  color: #1d1d1d;
+  font-family: "Lisa";
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.banner__tabs {
+  position: absolute;
+  width: 28%;
+  top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  left: 72%;
+}
+
+.banner__tab {
+  position: relative;
+  padding: 25px 75px 25px 30px;
+  background-color: white;
+}
+
+.banner__tab-descr {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  opacity: 0.5;
+  color: #1d1d1d;
+  font-family: "Lisa";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.banner__tab-descr:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  height: 18px;
+  top: 24px;
+  right: 30px;
+  background-image: url("../img/geo.png");
+  background-repeat: no-repeat;
+}
+
+.banner__sub-title {
+  color: #ff4343;
+  font-family: "Lisa";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.banner__time-deliv {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerLight";
+  margin-bottom: 30px;
+}
+
+.banner__deliv-mcad {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerMedium";
+  margin-bottom: 30px;
+}
+
+.banner__font {
+  font-family: "MullerLight";
+}
+
+.banner__deliv-outmcad {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerMedium";
+  margin-bottom: 0;
+}
+
+.banner__distance {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerLight";
+  margin-bottom: 30px;
+}
+
+.banner__free {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerMedium";
+  margin-bottom: 30px;
+}
+
+.banner__free-descr {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerLight";
+  width: 330px;
+  margin-bottom: 30px;
+}
+
+.banner__extra {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerMedium";
+  margin-bottom: 0;
+}
+
+.banner__price {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerLight";
+  margin-bottom: 30px;
+}
+
+.banner__renounce {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "MullerLight";
+}
+
+.banner__img-wrap {
+  position: absolute;
+  top: 120px;
+  left: 30%;
+  width: 984px;
+  height: 580px;
+  overflow: hidden;
+}
+
+.banner__img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.banner__tab-body {
+  display: none;
+}
+
+.tab-active {
+  background-color: #ff4343;
+}
+
+.tab-active .banner__tab-descr {
+  color: white;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+}
+
+.tab-active .banner__tab-descr:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 14px;
+  height: 18px;
+  top: 24px;
+  right: 30px;
+  background-image: url("../img/geo-wh.png");
+  background-repeat: no-repeat;
+}
+
+.active-tab-body {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
