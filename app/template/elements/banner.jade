@@ -3,14 +3,14 @@ section.banner
         h1.banner__title
             | Доставка
 
-        .banner__tabs
-            a(href="#Moscow" data-tab="Moscow").banner__tab.tab-active
-                p.banner__tab-descr
-                    | Москва
+        ul.banner__tabs
+            li
+                a(href="#Moscow" data-tab="Moscow").banner__tab.tab-active
+                        | Москва
 
-            a(href="#Rus" data-tab="Rus").banner__tab
-                p.banner__tab-descr
-                    | Россия
+            li
+                a(href="#Rus" data-tab="Rus").banner__tab
+                        | Россия
 
         #Moscow.banner__tab-body.active-tab-body
             h3.banner__sub-title

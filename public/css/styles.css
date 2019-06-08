@@ -351,7 +351,7 @@ textarea:active {
 .banner__tabs {
   position: absolute;
   width: 28%;
-  top: 50px;
+  top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,15 +359,15 @@ textarea:active {
   -ms-flex-pack: justify;
   justify-content: space-between;
   left: 72%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .banner__tab {
   position: relative;
   padding: 25px 75px 25px 30px;
   background-color: white;
-}
-
-.banner__tab-descr {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   opacity: 0.5;
   color: #1d1d1d;
@@ -378,7 +378,7 @@ textarea:active {
   margin-bottom: 0;
 }
 
-.banner__tab-descr:after {
+.banner__tab:after {
   position: absolute;
   content: '';
   display: block;
@@ -497,15 +497,16 @@ textarea:active {
 
 .tab-active {
   background-color: #ff4343;
-}
-
-.tab-active .banner__tab-descr {
   color: white;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   opacity: 1;
 }
 
-.tab-active .banner__tab-descr:after {
+.tab-active:hover {
+  color: white;
+}
+
+.tab-active:after {
   position: absolute;
   content: '';
   display: block;
