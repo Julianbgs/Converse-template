@@ -495,6 +495,71 @@ textarea:active {
   display: none;
 }
 
+.banner__order-title {
+  color: #1d1d1d;
+  font-family: "Lisa";
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.banner__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.banner__order-elem {
+  width: 25%;
+  border-right: 1px solid #f3f3f3;
+  padding: 35px 50px 40px 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.banner__order-img {
+  height: 30px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.banner__order-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.banner__order-descr {
+  width: 100%;
+  text-align: center;
+  color: #1d1d1d;
+  font-family: "MullerLight";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.banner__courier-title {
+  color: #1d1d1d;
+  font-family: "Lisa";
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
 .tab-active {
   background-color: #ff4343;
   color: white;
@@ -520,6 +585,121 @@ textarea:active {
 
 .active-tab-body {
   display: block;
+}
+
+.footer {
+  background-color: #1d1d1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.footer__elem {
+  width: 21%;
+}
+
+.footer__title {
+  color: white;
+  font-family: "Lisa";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__list li a {
+  color: white;
+  font-family: "MullerLight";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer__img-wrap {
+  width: 70px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.footer__img-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.footer__other-pay {
+  color: white;
+  font-family: "MullerLight";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+.footer__other-pay--link {
+  padding-left: 5px;
+  text-decoration: underline;
+  color: white;
+}
+
+.footer__other-pay--link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer__contact {
+  color: white;
+  font-family: "MullerLight";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer__contact--link {
+  color: white;
+}
+
+.footer__contact--link:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
