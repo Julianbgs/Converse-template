@@ -55,11 +55,11 @@ trigger.addEventListener('click', function (e) {
       menu.classList.add('show');
     }
 
-    window.onclick = function(event) {
-        if (event.target !== trigger) {
-            menu.classList.add('hide');
-            menu.classList.remove('display');
-            trigger.classList.remove('js-trigger-active');
-        }
-    }
+    // window.onclick = function(event) {
+    //     if (event.target !== trigger) {
+    //         menu.classList.add('hide');
+    //         menu.classList.remove('display');
+    //         trigger.classList.remove('js-trigger-active');
+    //     }
+    // }
 });
