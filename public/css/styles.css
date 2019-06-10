@@ -255,6 +255,13 @@ textarea:active {
   text-transform: uppercase;
   margin-top: 30px;
   margin-right: 40px;
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .header__low-menu--title {
+    display: block;
+  }
 }
 
 @media (max-width: 660px) {
@@ -316,6 +323,8 @@ textarea:active {
 @media (max-width: 660px) {
   .header__low-wrap {
     width: 100%;
+    position: relative;
+    left: 55px;
   }
 }
 
@@ -419,7 +428,7 @@ textarea:active {
   left: 18px;
   border-radius: 50%;
   height: 18px;
-  width: 50%;
+  width: 60%;
   color: white;
   background-color: #dd4545;
   overflow: hidden;
@@ -438,7 +447,7 @@ textarea:active {
 @media (max-width: 660px) {
   .header__low-count {
     left: 38px;
-    width: 26%;
+    width: 28%;
   }
 }
 
@@ -453,7 +462,7 @@ textarea:active {
   cursor: pointer;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 660px) {
   .header__trigger {
     display: block;
   }
@@ -683,6 +692,13 @@ textarea:active {
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+.banner__tab:hover {
+  background-color: #ff4343;
+  color: white;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
 }
 
 .banner__tab:after {
@@ -931,6 +947,7 @@ textarea:active {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-top: -5px;
 }
 
 .footer__box {

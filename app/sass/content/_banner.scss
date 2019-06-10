@@ -55,6 +55,12 @@
     text-transform: uppercase;
     margin-bottom: 0;
 
+    &:hover {
+      background-color: #ff4343;
+      color: white;
+      opacity: 1;
+    }
+
 
       &::after {
         position: absolute;
