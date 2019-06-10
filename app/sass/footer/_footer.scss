@@ -14,6 +14,14 @@
 
     &__elem {
       width: 21%;
+
+      @include breakpoint(max-width 1024px) {
+        width: 45%;
+      }
+
+      @include breakpoint(max-width 660px) {
+        width: 100%;
+      }
     }
 
     &__title {
@@ -31,7 +39,15 @@
     display: flex;
     flex-direction: column;
 
+    @include breakpoint(max-width 1024px) {
+      display: block;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
       li {
+        width: 50%;
+      float: left;
           a {
             color: white;
             font-family: $MullerLight;

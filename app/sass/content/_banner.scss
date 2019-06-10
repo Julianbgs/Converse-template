@@ -25,6 +25,22 @@
     margin: 0;
     padding: 0;
 
+    @include breakpoint(max-width 1024px) {
+      position: relative;
+      top: 0;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      left: 0 ;
+      width: 34%;
+    }
+
+    @include breakpoint(max-width 990px) {
+      width: 44%;
+    }
+
+    @include breakpoint(max-width 660px) {
+      width: 90%;
+    }
   }
 
   &__tab {
@@ -146,6 +162,19 @@
     height: 580px;
     overflow: hidden;
 
+    @include breakpoint(max-width 1024px) {
+      left: 42%;
+    }
+
+    @include breakpoint(max-width 660px) {
+      position: relative;
+      width: 340px;
+      height: 200px;
+      left: 0;
+      top: 0;
+    }
+
+
       img {
         width: 100%;
         height: 100%;
@@ -180,6 +209,17 @@
         border-right: 1px solid #f3f3f3;
         padding: 35px 50px 40px 50px;
         box-sizing: border-box;
+
+        @include breakpoint(max-width 1024px) {
+          width: 50%;
+          border-bottom: 1px solid #f3f3f3;
+        }
+
+        @include breakpoint(max-width 660px) {
+          width: 100%;
+          border-bottom: 1px solid #f3f3f3;
+          border-right: none;
+        }
       }
 
       &-img {

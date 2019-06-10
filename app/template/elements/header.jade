@@ -29,6 +29,14 @@ header.header
 .header__low
     .container
         .header__low-box
+            a(href="#").header__trigger#header-trigger
+                span
+                span
+                span
+
+            p.header__low-menu--title
+                | Меню
+
             ul.header__low-menu
                 li
                     a(href="#")
@@ -54,18 +62,21 @@ header.header
                 a(href="#").header__low-search
                     img(src="img/search.png")
 
-                .header__low-liked-wrap
+                .header__low-elem--wrap
                     span.header__low-heart
 
-                    p.header__low-liked
+                    span.header__low-count
+                        | 1
+
+                    p.header__low-descr
                         | Избранное: 1 товар
 
 
-                .header__low-bucket-wrap
+                .header__low-elem--wrap
                     span.header__low-bucket-img
 
-                    p.header__low-bucket
+                    span.header__low-count
+                        | 0
+
+                    p.header__low-descr
                         | корзина: 0 товаров
-
-
-
