@@ -26,6 +26,7 @@ function Tabs() {
     };
 
     let change = function(e) {
+        e.preventDefault();
         clear();
         e.target.classList.add('tab-active');
         let id = e.currentTarget.getAttribute('data-tab');

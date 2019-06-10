@@ -701,6 +701,10 @@ textarea:active {
   opacity: 1;
 }
 
+.banner__tab:focus {
+  color: white;
+}
+
 .banner__tab:after {
   position: absolute;
   content: '';
@@ -921,7 +925,7 @@ textarea:active {
   opacity: 1;
 }
 
-.tab-active:hover {
+.tab-active:focus {
   color: white;
 }
 

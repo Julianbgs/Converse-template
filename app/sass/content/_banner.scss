@@ -61,6 +61,10 @@
       opacity: 1;
     }
 
+    &:focus {
+      color: white;
+    }
+
 
       &::after {
         position: absolute;
@@ -267,7 +271,7 @@
   color: white;
   opacity: 1;
 
-  &:hover {
+  &:focus {
     color: white;
   }
 
