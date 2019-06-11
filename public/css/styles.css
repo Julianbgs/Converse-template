@@ -137,6 +137,8 @@ textarea:active {
 
 .header__navigation {
   position: relative;
+  width: 100%;
+  float: left;
 }
 
 .header__menu {
@@ -212,9 +214,6 @@ textarea:active {
 }
 
 .header__low {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   background-color: #1d1d1d;
 }
@@ -261,13 +260,7 @@ textarea:active {
   .header__low-menu--title {
     display: block;
     position: relative;
-    right: 75px;
-  }
-}
-
-@media (max-width: 440px) {
-  .header__low-menu--title {
-    right: 0;
+    left: 50px;
   }
 }
 
@@ -278,8 +271,8 @@ textarea:active {
     top: 70px;
     background-color: #1d1d1d;
     z-index: 22;
-    left: -17%;
-    width: 100%;
+    left: -25%;
+    width: 250px;
     padding-top: 10px;
   }
 }
@@ -313,7 +306,7 @@ textarea:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35%;
+  width: 55%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -331,13 +324,7 @@ textarea:active {
   .header__low-wrap {
     width: 100%;
     position: relative;
-    left: 100px;
-  }
-}
-
-@media (max-width: 440px) {
-  .header__low-wrap {
-    left: 55px;
+    left: 0;
   }
 }
 
@@ -470,7 +457,7 @@ textarea:active {
   width: 50px;
   height: 50px;
   top: 15px;
-  left: -45px;
+  left: 0;
   z-index: 15;
   cursor: pointer;
 }
@@ -478,13 +465,6 @@ textarea:active {
 @media (max-width: 660px) {
   .header__trigger {
     display: block;
-    left: -120px;
-  }
-}
-
-@media (max-width: 440px) {
-  .header__trigger {
-    left: -45px;
   }
 }
 

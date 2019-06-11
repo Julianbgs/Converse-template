@@ -2,13 +2,13 @@
   display: flex;
   width: 100%;
 
-   &__box {
-     display: flex;
-     width: 100%;
-     justify-content: space-between;
-     margin-top: 40px;
-     margin-bottom: 40px;
-   }
+  &__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
   &__logo {
     width: 200px;
@@ -22,8 +22,10 @@
     }
   }
 
-  &__navigation {
+  &__navigation{
     position: relative;
+    width: 100%;
+    float: left;
   }
 
   &__menu {
@@ -89,7 +91,6 @@
   }
 
   &__low {
-    display: flex;
     width: 100%;
     background-color: #1d1d1d;
 
@@ -122,11 +123,7 @@
           @include breakpoint(max-width 660px) {
             display: block;
             position: relative;
-            right: 75px;
-          }
-
-          @include breakpoint(max-width 440px) {
-            right: 0;
+            left: 50px;
           }
         }
 
@@ -136,9 +133,10 @@
         top: 70px;
         background-color: #1d1d1d;
         z-index: 22;
-        left: -17%;
-        width: 100%;
+        left: -25%;
+        width: 250px;
         padding-top: 10px;
+
       }
 
         li {
@@ -167,7 +165,7 @@
 
     &-wrap {
       display: flex;
-      width: 35%;
+      width: 55%;
       justify-content: space-between;
 
       @include breakpoint(max-width 1024px) {
@@ -178,11 +176,7 @@
       @include breakpoint(max-width 660px) {
         width: 100%;
         position: relative;
-        left: 100px;
-      }
-
-      @include breakpoint(max-width 440px) {
-        left: 55px;
+        left: 0;
       }
     }
 
@@ -296,18 +290,14 @@
     width: 50px;
     height: 50px;
     top: 15px;
-    left: -45px;
+    left: 0;
     z-index: 15;
     cursor: pointer;
 
     @include breakpoint(max-width 660px) {
       display: block;
-      left: -120px;
     }
 
-    @include breakpoint(max-width 440px) {
-      left: -45px;
-    }
 
     span {
       display: block;

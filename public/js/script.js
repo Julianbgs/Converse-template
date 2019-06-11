@@ -39,9 +39,9 @@ function Tabs() {
 let connectTabs = new Tabs();
 
 let trigger = document.querySelector('#header-trigger');
+let nav = document.querySelector('.header__navigation');
 
 trigger.addEventListener('click', function (e) {
-   console.log('work');
     let menu = document.querySelector('.header__low-menu');
     if (trigger.classList.contains('js-trigger-active')){
         trigger.classList.remove('js-trigger-active');
@@ -55,11 +55,17 @@ trigger.addEventListener('click', function (e) {
       menu.classList.add('show');
     }
 
-    // window.onclick = function(event) {
-    //     if (event.target !== trigger) {
-    //         menu.classList.add('hide');
-    //         menu.classList.remove('display');
-    //         trigger.classList.remove('js-trigger-active');
-    //     }
-    // }
+    window.onclick = function(event) {
+
+        var clickField = nav.contains(event.target);
+
+        // console.log(clickField);
+
+        if (!clickField) {
+            // console.log(event.target);
+            menu.classList.add('hide');
+            menu.classList.remove('display');
+            trigger.classList.remove('js-trigger-active');
+        }
+    }
 });
